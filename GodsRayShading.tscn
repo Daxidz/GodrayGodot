@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GodsRayShading.tres" type="Material" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="GodsRay" type="ColorRect"]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 215.0
+margin_top = 1.0
+margin_right = 159.0
+margin_bottom = -8.0
+rect_scale = Vector2( -1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Light2D" type="Light2D" parent="."]
+material = ExtResource( 1 )
+position = Vector2( 135.411, 44.5477 )
+scale = Vector2( 1.17678, 1.06629 )
+texture = ExtResource( 2 )

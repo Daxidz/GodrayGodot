@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GodsRay.shader" type="Shader" id=2]
+
+[sub_resource type="ViewportTexture" id=5]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 2 )
+shader_param/angle = null
+shader_param/width = 4.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 104.624, 72.3721 )
+scale = Vector2( 0.883504, 0.939044 )
+texture = SubResource( 5 )
+energy = 1.22
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 216, 144 )
+transparent_bg = true
+handle_input_locally = false
+hdr = false
+disable_3d = true
+usage = 0
+render_target_v_flip = true
+render_target_update_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Viewport"]
+material = SubResource( 4 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 99.0
+margin_bottom = 77.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

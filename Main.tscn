@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GodRayLight.tscn" type="PackedScene" id=1]
+[ext_resource path="res://terrasse.png" type="Texture" id=2]
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("Node2D/Viewport")
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.270588, 0.270588, 0.270588, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 104.57, 71.2347 )
+scale = Vector2( 0.864409, 0.973543 )
+texture = ExtResource( 2 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( -9.72284, 1.5874 )
+
+[node name="Light2D" parent="Node2D" index="0"]
+position = Vector2( 131.699, 65.746 )
+scale = Vector2( -0.961417, 0.961417 )
+texture = SubResource( 1 )
+energy = 0.55
+
+[editable path="Node2D"]

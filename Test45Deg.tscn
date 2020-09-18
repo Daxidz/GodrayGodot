@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GodsRay.shader" type="Shader" id=1]
+[ext_resource path="res://white_square.jpeg" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/angle = null
+shader_param/width = 40.0
+
+[node name="Sprite" type="Sprite"]
+material = SubResource( 1 )
+position = Vector2( 88.3647, 62.4541 )
+scale = Vector2( 0.703034, 0.782708 )
+texture = ExtResource( 2 )
