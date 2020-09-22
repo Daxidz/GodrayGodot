@@ -20,8 +20,8 @@ texture = ExtResource( 2 )
 position = Vector2( -9.72284, 1.5874 )
 
 [node name="Light2D" parent="Node2D" index="0"]
-position = Vector2( 131.699, 65.746 )
-scale = Vector2( -0.961417, 0.961417 )
+position = Vector2( 118.107, 37.3712 )
+scale = Vector2( -0.997244, 1.36378 )
 texture = SubResource( 1 )
 energy = 0.55
 

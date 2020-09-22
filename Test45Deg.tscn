@@ -6,10 +6,11 @@
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
 shader_param/angle = null
-shader_param/width = 40.0
+shader_param/width = 0.481
+shader_param/nb_branches = null
 
 [node name="Sprite" type="Sprite"]
 material = SubResource( 1 )
-position = Vector2( 88.3647, 62.4541 )
-scale = Vector2( 0.703034, 0.782708 )
+position = Vector2( 160.932, 154.823 )
+scale = Vector2( 0.808143, 1.12425 )
 texture = ExtResource( 2 )
